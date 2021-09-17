@@ -90,7 +90,7 @@ world = {
       "name": "Yellow Door",
       "tags": "",
       "id": "4",
-      "text": "The Yellow Door is a warm yellow. It seems inviting.\n\n[[Yellow Room]]\n[[White Room]]",
+      "text": "The Yellow Door is warm. It seems inviting.\n\n[[Yellow Room]]\n[[White Room]]",
       "links": [
         {
           "linkText": "Yellow Room",
@@ -104,7 +104,7 @@ world = {
         }
       ],
       "hooks": [],
-      "cleanText": "The Yellow Door is a warm yellow. It seems inviting."
+      "cleanText": "The Yellow Door is warm. It seems inviting."
     },
     {
       "name": "Green Door",
