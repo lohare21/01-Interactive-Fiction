@@ -248,7 +248,7 @@ world = {
       "cleanText": "This is it, the last door. Open it to find out what is on the other side."
     },
     {
-      "name": " Outside",
+      "name": "Outside",
       "tags": "",
       "id": "15",
       "text": "You finally did, you made it outside. Congrats. You win.",
@@ -298,7 +298,7 @@ def update(current_location, location_label, response):
 		return location_label
 	if "links" in current_location:
 		for link in current_location["links"]:
-			if link["linkText"] == response:
+			if link["linkText"].upper() == response:
 				return link["passageName"]
 	print("I don't understand what you are trying to do. Try again.")
 	return location_label
@@ -324,6 +324,5 @@ while True:
 	if current_location["name"] == "Exit":
 		break
 	response = get_input()
-
 
 print("Thanks for playing!")
